@@ -268,3 +268,52 @@ body {
     padding: 20px 10px;
   }
 }
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 520px;
+  margin: 20px auto;
+}
+
+.carousel-track {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.12);
+}
+
+.slide {
+  width: 100%;
+  display: none;
+  border-radius: 14px;
+}
+
+.slide.active {
+  display: block;
+}
+
+.arrow {
+  background: rgba(0,0,0,0.4);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: white;
+  font-size: 20px;
+  padding: 10px 14px;
+  cursor: pointer;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  transition: 0.2s ease;
+}
+
+.arrow:hover {
+  background: rgba(255,204,0,0.2);
+  border-color: rgba(255,204,0,0.5);
+}
+
+.arrow.left {
+  margin-right: 10px;
+}
+
+.arrow.right {
+  margin-left: 10px;
+}
